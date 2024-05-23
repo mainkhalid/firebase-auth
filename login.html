@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Firebase Authentication</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script type="module" src="login.js" defer></script>
+</head>
+<body>
+    <div class="background">
+        <div class="shape"></div>
+        <div class="shape"></div>
+    </div>
+
+    <form id="loginForm">
+        <h3>Login</h3>
+        <label for="email">Email
+            <input type="email" placeholder="Email" id="email" required>
+        </label>
+        <label for="password">Password
+            <input type="password" placeholder="Password" id="password" required>
+        </label>
+        <button id="submit" type="submit">Submit</button>
+        <div class="socials">
+            <div class="go">
+                <i class="fab fa-google"></i>Google
+            </div>
+            <div class="fb">
+                <i class="fab fa-facebook"></i>Facebook
+            </div>
+        </div>
+        <div class="form">
+            <p>Don't Have an Account? <a href="register.html">Create Account</a></p>
+        </div>
+    </form>
+</body>
+</html>

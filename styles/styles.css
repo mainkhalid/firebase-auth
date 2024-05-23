@@ -1,0 +1,130 @@
+*::after, ::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("../img/background2.jpg");
+  background-size: cover;
+  height: 100vh;
+}
+
+.background {
+  width: 400px;
+  height: 520px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3764705882);
+}
+.background .shape {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  border-radius: 50%;
+}
+.background .shape:first-child {
+  background: linear-gradient(#1845ad, #23a2f6);
+  left: -80px;
+  top: -80px;
+}
+.background .shape:last-child {
+  background: linear-gradient(#ff512f, #f09819);
+  right: -30px;
+  bottom: -80px;
+}
+
+form {
+  height: 520px;
+  width: 400px;
+  background-color: rgba(255, 255, 255, 0.13);
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  top: 50%;
+  left: 50%;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  padding: 50px 35px;
+  box-shadow: 0 0 40px rgba(8, 7, 16, 0.6);
+}
+form * {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  letter-spacing: 0.5px;
+  border: none;
+  outline: none;
+}
+form h3 {
+  font-size: 32px;
+  font-weight: 500;
+  line-height: 42px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+label {
+  display: block;
+  margin-top: 30px;
+  font-size: 16px;
+  font-weight: 500;
+}
+label input {
+  display: block;
+  height: 50px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.13);
+  border-radius: 3px;
+  padding: 0 10px;
+  margin-top: 8px;
+  font-size: 14px;
+  font-weight: 300;
+}
+label input::-moz-placeholder {
+  color: #e5e5e5;
+}
+label input::placeholder {
+  color: #e5e5e5;
+}
+
+button {
+  margin-top: 30px;
+  width: 100%;
+  background-color: white;
+  padding: 15px 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #080710;
+  border-radius: 5px;
+}
+
+.socials {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.socials .go,
+.socials .fb {
+  background-color: rgba(255, 255, 255, 0.13);
+  padding: 0.2rem;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  font-weight: 400;
+  width: 200px;
+  height: auto;
+}
+.socials .go:hover,
+.socials .fb:hover {
+  transform: translateY(0.2rem);
+}
+.socials .go i,
+.socials .fb i {
+  padding: 12px;
+}/*# sourceMappingURL=styles.css.map */
