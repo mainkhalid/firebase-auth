@@ -127,4 +127,63 @@ button {
 .socials .go i,
 .socials .fb i {
   padding: 12px;
+}
+
+h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #FAFAFA;
+  padding: 4rem;
+}
+h3 span {
+  color: rgb(50, 240, 25);
+}
+h3::after {
+  content: "";
+  width: 20%;
+  background-color: rgb(29, 231, 137);
+  height: 0.3rem;
+  left: 10rem;
+  position: absolute;
+  margin-top: 3rem;
+}
+
+nav {
+  width: 400px;
+  height: 500px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  left: 50%;
+  top: 50%;
+  background-color: rgba(255, 255, 255, 0.3764705882);
+  border-radius: 12px;
+}
+nav .controls {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+  text-align: center;
+  padding-top: 20rem;
+}
+nav .controls a {
+  margin-top: 30px;
+  width: 100%;
+  border: 2px solid greenyellow;
+  padding: 15px 10px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  color: #FAFAFA;
+  border-radius: 12px;
+  text-decoration: none;
+  transition: all 0.4S ease-out;
+}
+nav .controls a:hover {
+  border: none;
+  background-color: #FAFAFA;
+  color: #000;
+  transform: translateY(-0.2rem);
 }/*# sourceMappingURL=styles.css.map */
