@@ -6,7 +6,7 @@
 body{
     background-image: url('../img/background2.jpg');
     background-size: cover;
-    height: 100vh;
+    height: auto;
 }
 .background{
     height: 520px;
@@ -74,6 +74,7 @@ label{
         width: 100%;
         background-color: rgba(255, 255,255,0.13);
         border-radius: 3px;
+        border: 1px solid #dad7d7de;
         padding: 0 10px;
         margin-top: 8px;
         font-size: 14px;
@@ -122,53 +123,53 @@ button{
 }
 
 //independent element
-.me-page{
-    text-align: center;
-    font-size: 2rem;
-    font-weight: 600;
-    color:#FAFAFA;
-    padding: 4rem;
-    span{
-        color: rgb(50, 240, 25);
-    }
-    
-}
-nav{
-    width: 400px;
-    height: 500px;
+.home{
+    height: 420px;
+    width: 300px;
+    background-color: rgba(255, 255,255,0.13);
     position: absolute;
     transform: translate(-50%,-50%);
-    left: 50%;
+    border-radius: 10px;
     top: 50%;
-    background-color: #ffffff60;
-    border-radius: 12px;
+    left: 50%;
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255,255,0.1);
+    padding: 50px 35px;
+    box-shadow: 0 0 40px rgba(8,7,16,0.6);
+    
+    .header{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #e5e5e5;
+        span{
+            color: #f09819;
+            cursor: default;
+        }
+    }
     .controls{
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-        gap: 2rem;
-        padding: 2rem;
-        text-align: center;
-        padding-top: 20rem;
-        a{
-        margin-top: 30px;
-        width: 100%;
-        border: 2px solid greenyellow;
-        padding: 15px 10px;
-        font-size: 1.5rem;
-        font-weight: 500;
-        cursor: pointer;
-        color: #FAFAFA;
-        border-radius: 12px;
-        text-decoration: none;
-        transition: all .4S ease-out;
-        &:hover{
-            border: none;
-            background-color: #FAFAFA;
-            color: #000;
-            transform: translateY(-.2rem);
-        }
-        }
+        margin-top: 15rem;
+        margin-left: 1.8rem;
+        .login,
+        .register{
+            background-color: rgba(53, 47, 47, 0.8);
+            padding: .2rem;
+            border-radius: 8px;
+            font-size: 1.3rem;
+            font-weight: 400;
+            width: 240px;
+            height: auto;
+            margin-bottom: 1rem;
 
+            &:hover{
+                background-color: rgba(53, 47, 47, 0.18);
+            }
+            a{
+                text-decoration: none;
+                color: #fafafa;
+                font-size: 1.5rem;
+                margin: 6rem;
+            }
+        }
     }
 }
+@import'./media';

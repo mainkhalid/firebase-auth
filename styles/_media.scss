@@ -1,5 +1,32 @@
-// @media  (max-width:477px) {
-//     body{
-//         height: auto;
-//     }
-// }
+@media(max-width:799px) {
+    .background{
+        height: 500px;
+        width: 320px;
+        
+        .shape{
+            height: 150px;
+            width: 150px;
+            
+        }
+    }
+    form{
+        height: auto;
+        width: 320px;     
+    }
+}
+@media(max-width:477px) {
+    .background{
+        height: 500px;
+        width: 300px;
+        
+        .shape{
+            height: 150px;
+            width: 150px;
+            
+        }
+    }
+    form{
+        height: auto;
+        width: 300px;     
+    }
+}
