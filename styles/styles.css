@@ -11,8 +11,8 @@ body {
 }
 
 .background {
-  width: 400px;
   height: 520px;
+  width: 400px;
   position: absolute;
   transform: translate(-50%, -50%);
   left: 50%;
@@ -129,24 +129,15 @@ button {
   padding: 12px;
 }
 
-h3 {
+.me-page {
   text-align: center;
   font-size: 2rem;
   font-weight: 600;
   color: #FAFAFA;
   padding: 4rem;
 }
-h3 span {
+.me-page span {
   color: rgb(50, 240, 25);
-}
-h3::after {
-  content: "";
-  width: 20%;
-  background-color: rgb(29, 231, 137);
-  height: 0.3rem;
-  left: 10rem;
-  position: absolute;
-  margin-top: 3rem;
 }
 
 nav {
